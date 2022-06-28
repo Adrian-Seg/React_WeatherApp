@@ -1,5 +1,3 @@
-import { IWeatherLocation, IWeather } from "../models/Weather";
-
 const key = process.env.REACT_APP_OPEN_WEATHER_API_KEY;
 const keyQuery = `appid=${key}`;
 const server = 'https://api.openweathermap.org/data/2.5';

@@ -1,11 +1,4 @@
-import React, { useState, FC } from 'react';
-import { IWeatherLocation } from '../models/Weather';
-
-// interface LocationTableProps {
-//   locations: IWeatherLocation[];
-//   current: IWeatherLocation | null;
-//   onSelect: (location: IWeatherLocation) => void; 
-// }
+import React from 'react';
 
 export const LocationTable = ({ locations, current, onSelect }) => {
   return (

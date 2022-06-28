@@ -1,9 +1,6 @@
-import React, { useState, useEffect, FC } from 'react';
+import React, { useState, useEffect } from 'react';
 import { readWeather, readForeCast } from '../services/WeatherService';
 import { WeatherEntry } from './WeatherEntry';
-// interface WeatherSummaryProps {
-//     location: IWeatherLocation | null;
-// }
 
 export const WeatherSummary = ({ location }) => {
 
@@ -17,8 +14,10 @@ export const WeatherSummary = ({ location }) => {
                     readWeather(location.id),
                     readForeCast(location.id)
                 ]);
+                console.log(weather);
+                console.log(forecast);
                 setWeather(weather);
-                setForecast(forecast)
+                setForecast(forecast);
             }
         })();
 

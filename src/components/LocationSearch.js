@@ -1,8 +1,5 @@
-import React, { useState, FC } from 'react';
+import React, { useState } from 'react';
 
-// interface LocationSearchProps {
-//     onSearch: (search: string) => void;
-// }
 
 export const LocationSearch = ({ onSearch }) => {
 
